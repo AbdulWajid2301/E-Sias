@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Ammar_Temp"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Ammar_Temp"
+        android:elevation="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="32dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_baseline_menu_24" />
+
+            <ImageView
+                android:id="@+id/more"
+                android:layout_width="32dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="375dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_baseline_more_vert_24" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/myrbold"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Esia Administration"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="28dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:paddingLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="122dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center|left"
+            android:text="Add New Teacher"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/ll2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:padding="0dp"
+            android:text="Name *"
+            android:textColor="#fff"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/teachernamereg"
+            android:textSize="18dp"
+            android:paddingLeft="15dp"
+            android:layout_width="380dp"
+            android:layout_height="28dp"
+            android:background="@drawable/white_bg_whole"
+            android:hint="Enter your full name"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="122dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Department *"
+            android:textColor="#fff"
+            android:textSize="20dp"/>
+
+        <Spinner
+            android:id="@+id/teacherdept"
+            android:textSize="18dp"
+            android:paddingLeft="15dp"
+            android:layout_width="380dp"
+            android:layout_height="28dp"
+            android:background="@drawable/white_bg_whole"
+            android:hint="Enter your register number"
+            android:maxLength="30"
+            android:singleLine="true"
+            android:textColor="#000" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll4"
+        android:paddingLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="122dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Email *"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/teacheremailreg"
+            android:paddingLeft="15dp"
+            android:layout_width="380dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/white_bg_whole"
+            android:textColor="#000"
+            android:textSize="18dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll5"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="122dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Password *"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/teacherpasswordreg"
+            android:paddingLeft="15dp"
+            android:layout_width="380dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/white_bg_whole"
+            android:textColor="#000"
+            android:textSize="18dp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
